@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Portfolio</title>
-    </head>
-    <body>
-        <header>
-            <h3>Meghana</h3>
-            <button><a href="#home">Home</a></button>
-            <button><a href="#about">About</a></button>
-            <button><a href="#skills">Skills</a></button>
-            <button><a href="#experience">Experience</a></button>
-            <button><a href="#projects">Projects</a></button>
-            <!-- <button><a href="#technical">Technical Highlights</a></button> -->
-            <button><a href="#Certifications">Certifications</a></button>
-            <button><a href="#contact">Contact</a></button>
-        </header>
 
-        <main>
+<head>
+    <title> Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+    <header>
+        <h3>Meghana</h3>
+
+        <div class="nav-links">
+            <!-- <a href="#home">Home</a> -->
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#Certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="div1">
             <Section id="home">
-                <h2>Vasantha Meghana Danturty</h2>
-                <h4>Backend Developer</h4>
-                <p>Spring Boot | Laravel | REST API Development</p>
-                <p>Short description:</p>
-                <p>I build secure and scalable backend systems with a focus on RESTful APIs, authentication, and database design.
-                    Experienced in developing production-ready backend services using Spring Boot, Laravel, and MySQL.</p>
-                <button><a href="">View Projects</a></button>
-                <button><a href="">Download Resume</a></button>
+                <h2 id="name">Vasantha Meghana Danturty</h2>
+                <!-- <h4>Backend Developer</h4> -->
+                <p id="details">Backend Developer | Spring Boot • Laravel • REST API Development</p>
+                <p id="desc">I build secure and scalable backend systems with a focus on RESTful APIs, authentication,
+                    and database design.
+                    Experienced in developing production-ready backend services using Spring Boot, Laravel, and MySQL.
+                </p>
+                <div id="btn-container">
+                    <a href="#" class="bhome">View Projects</a>
+                    <a href="#" class="bhome">Download Resume</a>
+                </div>
             </Section>
+        </div>
+        <section id="about">
+            <h2 id="about">About Me</h2>
+            <div class="about-div">
+                <p id="about-desc">I am a backend-focused software developer with experience in building secure and
+                    scalable
+                    server-side
+                    applications. My expertise includes RESTful API development, authentication and authorization
+                    systems,
+                    and database schema design. I have worked with Spring Boot, Laravel, and MySQL to develop
+                    production-ready backend systems while
+                    focusing on performance, security, and maintainability.
+                </p>
+            </div>
+        </section>
 
-            <section id="about">
-                <h2>About Me</h2>
-                <p>I am a backend-focused software developer with experience in building secure and scalable server-side applications. My expertise includes RESTful API development, authentication and authorization systems, and database schema design.
-                    <br>
-                    I have worked with Spring Boot, Laravel, and MySQL to develop production-ready backend systems while focusing on performance, security, and maintainability.</p>
-            </section>
+        <section id="skills">
+            <h2 id="skills-h">Technical Skills</h2>
 
-            <section id="skills">
-                <h2>Technical Skills</h2>
-                <span>
+            <div class="tech-container">
+
+                <div class="tech-box">
                     <h4>Languages</h4>
                     <ul>
                         <li>Java</li>
@@ -47,117 +67,141 @@
                         <li>CSS</li>
                         <li>JavaScript</li>
                     </ul>
-                </span>
-                <span>
+                </div>
+
+                <div class="tech-box">
                     <h4>Frameworks</h4>
                     <ul>
                         <li>Springboot</li>
                         <li>Spring Framework</li>
                         <li>Laravel</li>
                     </ul>
-                </span>
-                <span>
+                </div>
+
+                <div class="tech-box">
                     <h4>Databases</h4>
                     <ul>
                         <li>MySQL</li>
                         <li>Database Schema Design</li>
                     </ul>
-                </span>
-                <span>
+                </div>
+
+                <div class="tech-box">
                     <h4>Security</h4>
                     <ul>
                         <li>JWT Authentication</li>
                         <li>Role-Based Access Control</li>
                         <li>AES Encryption</li>
                     </ul>
-                </span>
-                <span>
+                </div>
+
+                <div class="tech-box">
                     <h4>Tools</h4>
                     <ul>
                         <li>Git</li>
                         <li>Postman</li>
                     </ul>
-                </span>
-            </section>
+                </div>
 
-            <section id="experience">
-                <h2>Professional Experience</h2>
-                <span>
-                    <h4> Backend Developer - Hyperion Tech</h4>
-                    <p>Jan 2025 - Jan 2026</p>
-                    <ul>
-                        <li>Developed RESTful APIs using Spring Boot and  Laravel</li>
-                        <li>Implemented JWT authentication and role-based access control</li>
-                        <li>Integrated MySQL databases and optimized queries</li>
-                        <li>Built reusable backend modules for authentication</li>
-                        <li>Debugged production issues and improved system stability</li>
-                    </ul>
-                </span>
-            </section>
+            </div>
+        </section>
 
-            <section id="projects">
-                <h2>Projects</h2>
+        <section id="experience">
+            <h2 id="experience-h">Professional Experience</h2>
+            <div class="experience-div">
                 <span>
+                    <h3 id="h3-experience"> Backend Developer - Hyperion Tech</h4>
+                        <p id="p-experience">Jan 2025 - Jan 2026</p>
+                        <ul id="ul-experience">
+                            <li>Developed RESTful APIs using Spring Boot and Laravel</li>
+                            <li>Implemented JWT authentication and role-based access control</li>
+                            <li>Integrated MySQL databases and optimized queries</li>
+                            <li>Built reusable backend modules for authentication</li>
+                            <li>Debugged production issues and improved system stability</li>
+                        </ul>
+                </span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 id="h2-projects">Projects</h2>
+
+            <div class="div-projects">
+
+                <div class="project-det">
                     <h4>Ticket Management System</h4>
-                    <p>Backend system for managing ticket workflows including authentication, file uploads, and notification services.</p>
-                    <p><b>Technologies: </b>Springboot, MySQL, JWT</p>
+                    <p>Backend system for managing ticket workflows including authentication, file uploads, and
+                        notification services.</p>
+                    <p><b>Technologies:</b> Springboot, MySQL, JWT</p>
                     <ul>
                         <li>Secure authentication system</li>
                         <li>Ticket lifecycle management</li>
                         <li>Email notifications</li>
                         <li>Activity logging</li>
                     </ul>
-                </span>
+                </div>
 
-                <span>
+                <div class="project-det">
                     <h4>Elderly Care Platforms</h4>
-                    <p>Backend services supporting healthcare workflows including authentication and secure document management.</p>
-                    <p><b>Technologies: </b> Springboot, MySQL, JWT</p>
+                    <p>Backend services supporting healthcare workflows including authentication and secure document
+                        management.</p>
+                    <p><b>Technologies:</b> Springboot, MySQL, JWT</p>
                     <ul>
                         <li>Authentication modules</li>
                         <li>Secure file storage</li>
                         <li>Healthcare workflow integration</li>
                         <li>Activity logging</li>
                     </ul>
-                </span>
+                </div>
 
-                <span>
+                <div class="project-det">
                     <h4>Crowe Surfboard E-Commerce</h4>
                     <p>Laravel backend modules supporting product management, orders, and user accounts.</p>
-                    <p><b>Technologies: </b>Laravel, PHP, MySQL</p>
+                    <p><b>Technologies:</b> Laravel, PHP, MySQL</p>
                     <ul>
                         <li>Product management</li>
                         <li>Order processing</li>
                         <li>User account system</li>
                     </ul>
-                </span>
-            </section>
-            
-            <section id="Certifications">
-                <h2>Certificates</h2>
-                <ul>
-                    <li>Java Foundation - Oracle </li>
-                    <li>DBMS Foundation - Oracle </li>
-                    <li>SQL - Infosys Springboard </li>
-                    <li>C Essentials - Cisco</li>
-                    <li>HTML5 Application Development - Criativo </li>
-                    <li>Python Basics - Infosys Springboard </li>
-                </ul>
-            </section>
+                </div>
 
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>If you would like to collaborate or discuss backend development opportunities, feel free to contact me.</p>
-                <p><b>Email: </b> vasantha.danturthy@gmail.com</p>
-                <p><b>Phone: </b>8341412350</p>
-                <p><b>Location: </b>Visakhapatnam, Andhra Pradesh</p>
-            </section>
+            </div>
+        </section>
 
-        </main>
+        <section id="Certifications">
+            <h2 id="h2-certificates">Certificates</h2>
+            <div class="certifactes-div">
+            <ul id="ul-certificates">
+                <li>Java Foundation - Oracle </li>
+                <li>DBMS Foundation - Oracle </li>
+                <li>SQL - Infosys Springboard </li>
+                <li>C Essentials - Cisco</li>
+                <li>HTML5 Application Development - Criativo </li>
+                <li>Python Basics - Infosys Springboard </li>
+            </ul>
+        </div>
+        </section>
 
-        <footer>
-            <p>Vasantha Meghana Danturty<br> Developer <br> © 2026 All Rights Reserved</p>
-        </footer>
+        <section id="contact">
+            <h2 class="contact-title">Contact</h2>
+        
+            <div class="contact-container">
+                <div class="contact-box">
+                    <p>If you would like to collaborate or discuss backend development opportunities, feel free to contact me.</p>
+        
+                    <p><b>Email:</b> vasantha.danturthy@gmail.com</p>
+                    <p><b>Phone:</b> 8341412350</p>
+                    <p><b>Location:</b> Visakhapatnam, Andhra Pradesh</p>
+                </div>
+            </div>
+        </section>
 
-    </body>
+    </main>
+
+    <footer>
+        <p>Vasantha Meghana Danturty<br> Developer <br> © 2026 All Rights Reserved</p>
+    </footer>
+
+</body>
+
 </html>

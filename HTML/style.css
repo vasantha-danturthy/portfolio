@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(140deg, rgb(248, 245, 255), rgb(216, 191, 216), rgb(176, 196, 222));
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.5);
+    /* dark glass effect */
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+}
+
+/* Name */
+header h3 {
+    margin: 0;
+    align-content: flex-start;
+    color: white;
+    font-size: 22px;
+}
+
+/* Links */
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* Hover glow */
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Prevent overlap */
+main {
+    margin-top: 80px;
+}
+
+/* home */
+#div1 {
+    background: rgba(230, 220, 255, 0.55);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    height: calc(100vh - 40px);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#name {
+    color: rgb(55, 55, 80);
+    text-align: center;
+    font-size: 45px;
+    margin: auto;
+}
+
+#details {
+    color: rgb(110, 110, 140);
+    text-align: center;
+    font-style: italic;
+}
+
+#desc {
+    color: rgb(110, 110, 140);
+    text-align: center;
+    width: 600px;
+}
+
+#btn-container {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.bhome {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: rgb(155, 135, 220);
+    color: rgb(244, 244, 244);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.bhome:hover {
+    background: rgb(135, 115, 200);
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+
+/* about */
+#about {
+    display: inline;
+    color: rgb(55, 55, 80);
+}
+
+#about-desc {
+    color: rgb(110, 110, 140);
+    margin: 5px;
+}
+
+.about-div{
+    background-color: rgba(230, 220, 255, 0.55);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* skills */
+.tech-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.tech-box {
+    background: rgba(230, 220, 255, 0.55); /* your card color */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(176, 196, 222);  /* soft border from palette */
+    border-radius: 10px;
+    padding: 15px;
+    width: 170px;
+    text-align: center;
+
+    color: rgb(55, 55, 80); /* primary text */
+}
+#skills-h{
+    color: rgb(55, 55, 80);
+}
+/* headings inside */
+.tech-box h4 {
+    color: rgb(55, 55, 80);
+    margin-bottom: 10px;
+}
+/* list text */
+.tech-box li {
+    color: rgb(110, 110, 140); /* secondary text */
+}
+/* hover effect */
+.tech-box:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    border-color: rgb(155, 135, 220); /* accent on hover */
+}
+
+/* experience */
+#experience-h{
+    color: rgb(55, 55, 80);
+}
+.experience-div{
+    background-color: rgba(230, 220, 255, 0.55);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+#h3-experience{
+    color:rgb(55, 55, 80);
+    margin-bottom: 0px;
+}
+#p-experience{
+    color: rgb(55, 55, 80);
+    margin:0px;
+    font-style: italic;
+}
+#ul-experience{
+    color: rgb(110, 110, 140);
+}
+
+/* projects */
+#h2-projects{
+    color: rgb(55, 55, 80);
+}
+.div-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+.project-det {
+    background: rgba(230, 220, 255, 0.55);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(176, 196, 222);
+    border-radius: 12px;
+    padding: 20px;
+    width: 350px;
+    color: rgb(55, 55, 80);
+    transition: 0.3s;
+}
+.project-det h4 {
+    margin-bottom: 10px;
+}
+.project-det p {
+    color: rgb(110, 110, 140);
+    margin: 5px 0;
+}
+.project-det li {
+    color: rgb(110, 110, 140);
+}
+.project-det:hover {
+    transform: translateY(-6px);
+    border-color: rgb(155, 135, 220);
+}
+
+/* certificates */
+.certifactes-div{
+    background-color: rgba(230, 220, 255, 0.55);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+#h2-certificates{
+    color: rgb(55, 55, 80);
+}
+#ul-certificates{
+    color: rgb(110, 110, 140);
+}
+
+/* contact */
+.contact-title {
+    text-align: center;
+    color: rgb(55, 55, 80);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-box {
+    background: rgba(230, 220, 255, 0.55);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(176, 196, 222);
+    border-radius: 12px;
+    padding: 25px;
+    width: 500px;
+
+    text-align: center;
+    color: rgb(55, 55, 80);
+}
+
+.contact-box p {
+    color: rgb(110, 110, 140);
+    margin: 10px 0;
+}
+
+/* hover like other cards */
+.contact-box:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    border-color: rgb(155, 135, 220);
+}
+
+/* footer */
+footer {
+    background: rgb(40, 40, 70);   /* deep dark tone */
+    color: rgb(220, 220, 255);     /* soft light text */
+
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 40px;
+
+    border-top: 2px solid rgb(155, 135, 220); /* subtle accent line */
+}
+
+/* text inside */
+footer p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 14px;
+}
+footer {
+    background: linear-gradient(
+        to right,
+        rgb(35, 35, 65),
+        rgb(55, 45, 90)
+    );
+}
